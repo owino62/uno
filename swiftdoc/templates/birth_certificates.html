@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Birth Certificates{% endblock title %}
+
+{% block body %}
+
+<section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Birth Certificate Registration</h2>
+        <p> An official document issued by the Civil Registration Services confirming a person’s birth details.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">REQUIREMENTS</span>
+            <h2 class="about-title">These are the details we need from you for this service</h2>
+            
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Notification of birth (from hospital or chief) </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Parent(s) identification documents (ID or passport)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Completed application form via eCitizen or registrar’s office</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Mandatory 10-day public notice</li>
+                </ul>
+              </div>
+             
+            </div>
+
+           <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary me-md-2" type="button"
+                   onclick="window.open('https://wa.me/254736057481?text=Hello%20I%20would%20like%20to%20apply%20for%20Birth%20Certificate%20Service.','_blank')">
+                    Apply
+                </button>
+           </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="{% static 'assets/img/birth_certificate/claudio-schwarz-1LTLB6jS1Gk-unsplash.jpg' %}" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="{% static 'assets/img/birth_certificate/ph_57668_224857.jpg' %}" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div> 
+              <div class="experience-badge floating">
+                <h3>15+ <span>Years</span></h3> 
+                <p>Of experience in business service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+</section><!-- /About Section -->
+
+
+{% endblock %}

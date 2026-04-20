@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dependent Pass{% endblock title %}
+
+{% block body %}
+
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Dependent Pass </h2>
+        <p>Status granted to spouses and children of permit holders, allowing family members to legally reside in Kenya alongside the principal applicant.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">REQUIREMENTS</span>
+            <h2 class="about-title">These are the details we need from you for this service</h2>
+            
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i>Valid passport copies of dependents</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Marriage certificate (for spouse)</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Principal permit holder’s documents</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary me-md-2" type="button"
+                   onclick="window.open('https://wa.me/254736057481?text=Hello%20I%20would%20like%20to%20apply%20for%20A%20Dependent%20Pass%20Service.','_blank')">
+                    Apply
+                </button>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="{% static 'assets/img/about/about-5.webp' %}" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="{% static 'assets/img/about/about-square-1.webp' %}" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>15+ <span>Years</span></h3>
+                <p>Of experience in business service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+{% endblock %}

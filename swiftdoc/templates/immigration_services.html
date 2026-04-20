@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Immigration Services{% endblock title %}
+
+{% block body %}
+
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Immigration Services</h2>
+        <p>Select your immigration service</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-palette"></i>
+              </span>
+              <h3>
+                <a href="{% url 'first_time' %}">
+                  First-Time Passport <span> Application</span>
+                </a>
+              </h3>
+              <p>
+                We guide you through the entire process of applying for your first passport, ensuring all documents are correctly prepared and submitted for smooth approval.
+              </p>
+              <a href="{% url 'first_time' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-gem"></i>
+              </span>
+              <h3>
+                <a href="{% url 'passport_renewal' %}">
+                  Passport <span> Renewal</span>
+                </a>
+              </h3>
+              <p>
+                 Our team manages the renewal process, helping you update your passport quickly and without the stress of paperwork or long queues.
+              </p>
+              <a href="{% url 'passport_renewal' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-megaphone"></i>
+              </span>
+              <h3>
+                <a href="{% url 'visa_application' %}">
+                  Visa <span>Applications</span>
+                </a>
+              </h3>
+              <p>
+               We handle visa applications for travel, work, or study, ensuring compliance with requirements and timely submission to the relevant authorities.
+              </p>
+              <a href="{% url 'visa_application' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-code-slash"></i>
+              </span>
+              <h3>
+                <a href="{% url 'visa_extension' %}">
+                  Visa <span>Extensions</span>
+                </a>
+              </h3>
+              <p>
+                If you need to extend your stay, we process visa extension requests on your behalf, avoiding interruptions to your travel or work plans.
+              </p>
+              <a href="{% url 'visa_extension' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'interstate_pass' %}">
+                  Interstate <span> Pass</span>
+                </a>
+              </h3>
+              <p>
+                - We facilitate the application for state passes, ensuring proper authorization for individuals requiring official clearance to reside or work in Kenya.
+              </p>
+              <a href="{% url 'interstate_pass' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'dependent_pass' %}">
+                  Dependent <span> Pass</span>
+                </a>
+              </h3>
+              <p>
+                We assist in obtaining dependent passes for spouses, children, or family members, ensuring they can legally reside in Kenya alongside the primary permit holder.
+              </p>
+              <a href="{% url 'dependent_pass' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'student_pass' %}">
+                  Student <span> Pass</span>
+                </a>
+              </h3>
+              <p>
+                We manage student pass applications for foreign students enrolling in Kenyan institutions, making sure all academic and immigration requirements are met.
+              </p>
+              <a href="{% url 'student_pass' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'special_pass' %}">
+                  Special <span> Pass</span>
+                </a>
+              </h3>
+              <p>
+                We manage Special Pass applications for foreigners needing short-term stay in Kenya, ensuring all employer and immigration requirements are properly handled.
+              </p>
+              <a href="{% url 'special_pass' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'internship_pass' %}">
+                  Internship/Research <span> Pass</span>
+                </a>
+              </h3>
+              <p>
+                We process Internship and Research Pass applications for foreign students and researchers, making sure academic placements and immigration approvals are secured smoothly.
+              </p>
+              <a href="{% url 'internship_pass' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'regaining_citizenship' %}">
+                  Regaining Kenyan <span> Citizenship</span>
+                </a>
+              </h3>
+              <p>
+                We assist former Kenyan citizens in regaining their nationality, guiding them through documentation, affidavits, and compliance with the Citizenship and Immigration Act.
+              </p>
+              <a href="{% url 'regaining_citizenship' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'declaration_of_dual' %}">
+                  Declaration of Dual<span> Citizenship</span>
+                </a>
+              </h3>
+              <p>
+                We handle dual citizenship declarations for Kenyans acquiring another nationality, ensuring proper registration and compliance with legal requirements.
+              </p>
+              <a href="{% url 'declaration_of_dual' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'application_of_kenyan' %}">
+                  Application of Kenyan<span> Citizenship</span>
+                </a>
+              </h3>
+              <p>
+                We manage applications for foreigners seeking Kenyan citizenship by marriage, residence, or naturalization, ensuring all eligibility and documentation requirements are met.
+              </p>
+              <a href="{% url 'application_of_kenyan' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'permanent_residency' %}">
+                  Application of Permanent<span> Residency</span>
+                </a>
+              </h3>
+              <p>
+                We facilitate permanent residency applications for foreigners wishing to settle in Kenya, streamlining the process across family, investor, and long-term residence categories.
+              </p>
+              <a href="{% url 'permanent_residency' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+{% endblock %}

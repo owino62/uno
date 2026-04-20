@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index{% endblock title %}
+
+{% block body %}
+
+<section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certificate of No Impediment</h2>
+        <p> Issued by the Registrar of Marriages in Kenya confirming that a Kenyan citizen has no existing marriage record and is legally free to marry abroad. It is often required by foreign authorities before they can register a marriage involving a Kenyan national.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">REQUIREMENTS</span>
+            <h2 class="about-title">These are the details we need from you for this service</h2>
+            
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Certified copy of Passport </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Certified copy of Birth Certificate</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Proof of marital status (such as an affidavit or statutory declaration)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Mandatory 10-day public notice</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Details of intended marriage abroad</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Copy of Passport(bio-data page)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Two-passport size photos</li>
+                </ul>
+              </div>
+            </div>
+
+           <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary me-md-2" type="button"
+                   onclick="window.open('https://wa.me/254736057481?text=Hello%20I%20would%20like%20to%20apply%20for%20Class%20M%20Work%20Permit.','_blank')">
+                    Apply
+                </button>
+           </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="{% static 'assets/img/marriage/sandy-millar-8vaQKYnawHw-unsplash.jpg' %}" alt="Business Meeting" class="img-fluid main-image rounded-4"> 
+                <img src="{% static 'assets/img/about/fotografo-samuel-cruz-4RfRggc0hRA-unsplash.jpg' %}" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>  
+              <div class="experience-badge floating">
+                <h3>15+ <span>Years</span></h3>
+                <p>Of experience in business service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+</section><!-- /About Section -->
+
+
+{% endblock %}

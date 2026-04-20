@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index{% endblock title %}
+
+{% block body %}
+
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Work Permits</h2>
+        <p>Select your work permit class</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-palette"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_A' %}">
+                  Class <span> A</span>
+                </a>
+                <br>
+                <br>
+                Prospecting/Mining
+              </h3>
+              <p>
+                Issued to individuals engaging in prospecting for minerals or mining activities, allowing them to legally operate within Kenya’s mining sector.
+              </p>
+              <a href="{% url 'class_A' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-gem"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_B' %}">
+                  Class <span>B</span>
+                </a>
+                <br>
+                <br>
+                Agriculture
+              </h3>
+              <p>
+                Granted to those investing in or managing agricultural ventures such as farming, livestock, or horticulture.
+              </p>
+              <a href="{% url 'class_B' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-megaphone"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_C' %}">
+                  Class <span>C</span>
+                </a>
+                <br>
+                <br>
+                Prescribed Professions
+              </h3>
+              <p>
+                Designed for professionals such as doctors, lawyers, engineers, and other regulated fields, enabling them to practice their profession in Kenya.
+              </p>
+              <a href="{% url 'class_C' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-code-slash"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_D' %}">
+                  Class <span>D</span>
+                </a>
+                <br>
+                <br>
+                Employment
+              </h3>
+              <p>
+                For individuals offered employment by a specific employer in Kenya, covering most formal job placements.
+              </p>
+              <a href="{% url 'class_D' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_F' %}">
+                  Class <span> F</span>
+                </a>
+                <br>
+                <br>
+                Manufacturing
+              </h3>
+              <p>
+                Issued to investors or managers establishing or running manufacturing industries in Kenya.
+              </p>
+              <a href="{% url 'class_F' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_G' %}">
+                  Class <span> G</span>
+                </a>
+                <br>
+                <br>
+                Trade/Business
+              </h3>
+              <p>
+                For entrepreneurs and business owners intending to engage in trade or establish commercial enterprises.
+              </p>
+              <a href="{% url 'class_G' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_I' %}">
+                  Class <span> I</span>
+                </a>
+                <br>
+                <br>
+                Religious/Charitable Activities
+              </h3>
+              <p>
+                Granted to missionaries, clergy, or individuals involved in charitable or humanitarian work.
+              </p>
+              <a href="{% url 'class_I' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_K' %}">
+                  Class <span> K</span>
+                </a>
+                <br>
+                <br>
+                Residency without Employment
+              </h3>
+              <p>
+                For persons wishing to reside in Kenya without engaging in employment, often retirees or dependents.
+              </p>
+              <a href="{% url 'class_K' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <article class="service-item">
+              <span class="service-icon rounded-circle">
+                <i class="bi bi-camera-video"></i>
+              </span>
+              <h3>
+                <a href="{% url 'class_M' %}">
+                  Class <span> M</span>
+                </a>
+                <br>
+                <br>
+                Refugees
+              </h3>
+              <p>
+                Issued to recognized refugees, allowing them to legally reside and engage in permitted activities within Kenya.
+              </p>
+              <a href="{% url 'class_M' %}" class="card-action rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+{% endblock %}
