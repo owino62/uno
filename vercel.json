@@ -1,8 +1,17 @@
 {
   "builds": [
-    { "src": "karl/wsgi.py", "use": "@vercel/python" }
+    {
+      "src": "karl/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "karl/wsgi.py" }
+    {
+      "src": "/(.*)",
+      "dest": "karl/wsgi.py"
+    }
   ]
 }
