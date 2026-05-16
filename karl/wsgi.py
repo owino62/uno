@@ -8,9 +8,11 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+# Force ALLOWED_HOSTS at the very start
+os.environ['DJANGO_ALLOWED_HOSTS'] = 'swiftdocx.co.ke,www.swiftdocx.co.ke,.vercel.app'
 
 from django.core.wsgi import get_wsgi_application
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'karl.settings')
-
 application = get_wsgi_application()
