@@ -18,7 +18,10 @@ from decouple import config
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False')=='True'
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app',
+                'swiftdocx.co.ke',
+                'www.swiftdocx.co.ke'
+]
 
 DATABASES = {
     'default': dj_database_url.config(default=config('DATABASE_URL'))
