@@ -19,8 +19,8 @@ import sys
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False')=='True'
-print(f"HTTP_HOST header received: {os.environ.get('HTTP_HOST', 'Not Found')}", file=sys.stderr)
-print(f"Loaded settings from: {__file__}", file=sys.stderr)
+print(f"DEBUG: HTTP_HOST header = {os.environ.get('HTTP_HOST', 'NOT SET')}", file=sys.stderr)
+print(f"DEBUG: Loaded settings from = {__file__}", file=sys.stderr)
 ALLOWED_HOSTS = [
     '.vercel.app',
     'swiftdocx.co.ke',
