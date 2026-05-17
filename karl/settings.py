@@ -17,19 +17,21 @@ from decouple import config
 import sys
 
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = os.environ.get('DEBUG', 'False')=='True'
-print("DJANGO_ALLOWED_HOSTS raw:", os.environ.get("DJANGO_ALLOWED_HOSTS"))
-print("All environment variables:", dict(os.environ))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(',')
+SECRET_KEY = os.environ.get("SECRET_KEY", "unsafe-default-key")
+
+DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
+
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 DATABASES = {
-    'default': dj_database_url.config(default=config('DATABASE_URL'))
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL")
+    )
 }
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+print("DJANGO_ALLOWED_HOSTS raw:", os.environ.get("DJANGO_ALLOWED_HOSTS"))
+print("ALLOWED_HOSTS parsed:", ALLOWED_HOSTS)
 
 
 # Quick-start development settings - unsuitable for production
