@@ -19,9 +19,10 @@ import sys
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False')=='True'
-print(f"DEBUG: HTTP_HOST header = {os.environ.get('HTTP_HOST', 'NOT SET')}", file=sys.stderr)
-print(f"DEBUG: Loaded settings from = {__file__}", file=sys.stderr)
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '.vercel.app').split(',')
+print("DJANGO_ALLOWED_HOSTS raw:", os.environ.get("DJANGO_ALLOWED_HOSTS"))
+print("All environment variables:", dict(os.environ))
+
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(',')
 
 DATABASES = {
     'default': dj_database_url.config(default=config('DATABASE_URL'))
