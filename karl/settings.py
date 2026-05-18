@@ -143,9 +143,9 @@ STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'agolaeugene0@gmail.com'
-EMAIL_HOST_PASSWORD = 'oeth aonm rosv nqvk'
+EMAIL_HOST_USER = 'info@swiftdocx.co.ke'
+EMAIL_HOST_PASSWORD = '3v9ZpGwMfXa1'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
