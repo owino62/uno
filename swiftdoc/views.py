@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from django.conf import settings
 from .models import ContactRequest
 
@@ -129,13 +129,16 @@ def contact_view(request):
             request=request_text
         )
 
-        # Send email notification
-        send_mail(
+         # Send email notification to Zoho inbox
+        message = f"Name: {name}\nEmail: {email}\n\nRequest:\n{request_text}"
+        mail = EmailMessage(
             subject=f"New Contact Request: {subject}",
-            message=f"Name: {name}\nEmail: {email}\n\nRequest:\n{request_text}",
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=['agolaeugene0@gmail.com'],  # replace with your email
+            body=message,
+            from_email=settings.DEFAULT_FROM_EMAIL,   # your Zoho account
+            to=['info@swiftdocx.co.ke'],              # Zoho inbox (business)
+            reply_to=[email]                          # customer’s email for reply
         )
+        mail.send()
 
         return render(request, 'index.html',{'sent':True})
 
